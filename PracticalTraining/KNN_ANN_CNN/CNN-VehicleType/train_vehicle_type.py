@@ -26,8 +26,8 @@ output_plot_path = 'plots/vehicle_type.png'
 # 全局常量
 TARGET_WIDTH = 32
 TARGET_HEIGHT = 32
-BATCH_SIZE = 32
-EPOCHS = 60
+BATCH_SIZE = 16
+EPOCHS = 50
 LR_INIT = 0.01
 DECAY = LR_INIT/EPOCHS
 MOMENTUM = 0.9

@@ -14,7 +14,7 @@ import cv2
 
 # 全局变量
 model_path = 'models/vehicle_type.hdf5'
-test_img_path = "tests/768.jpg"
+test_img_path = "tests/test11.jpg"
 # 全局常量
 VEHICLE_WIDTH = 32
 VEHICLE_HEIGHT = 32
