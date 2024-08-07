@@ -11,23 +11,23 @@ from conv import MiniVGGNet
 from callbacks import TrainingMonitor
 from imutils import paths
 from sklearn.model_selection import train_test_split
-from keras.optimizers.legacy import SGD
+from keras.optimizers import SGD
 from sklearn.metrics import classification_report
 from keras.utils import to_categorical
 from sklearn.preprocessing import LabelEncoder
 
 
 # 全局变量
-dataset_path = './images'
-output_model_path = './models/vehicle_type.hdf5'
-output_plot_path = './plots/vehicle_type.png'
+dataset_path = 'images'
+output_model_path = 'models/vehicle_type.hdf5'
+output_plot_path = 'plots/vehicle_type.png'
 
 
 # 全局常量
 TARGET_WIDTH = 32
 TARGET_HEIGHT = 32
-BATCH_SIZE = 64
-EPOCHS = 15
+BATCH_SIZE = 32
+EPOCHS = 100
 LR_INIT = 0.01
 DECAY = LR_INIT/EPOCHS
 MOMENTUM = 0.9
